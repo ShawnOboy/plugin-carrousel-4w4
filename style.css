@@ -1,0 +1,14 @@
+.carrousel {
+  width: 50%;
+  height: 50%;
+  background-color: aqua;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  scale: 1;
+  transition: scale 200ms;
+}
+
+.carrousel--ouvrir {
+  scale: 1;
+}/*# sourceMappingURL=style.css.map */
