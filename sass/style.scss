@@ -1,18 +1,87 @@
 .carrousel {
-
     width: 50%;
-    height: 50%;
-    background-color: aqua;
+    height: 80%;
+    background-color: rgb(60, 140, 150);
+    border-top: 4px solid rgb(130, 190, 200);
+    border-bottom: 4px solid rgb(30, 100, 110);
+    border-radius: 30px;
     position: fixed;
-    top: 25%;
+    top: 2rem;
     left: 25%;
-    scale: 1;
-    transition: scale 200ms;
+    padding: 1rem;
+    scale: 0;
+    transition: scale 200ms, border-radius 200ms, border-top 200ms, border-bottom 200ms, scale 200ms;
+
+    &:hover {
+
+        border-radius: 8px;
+        border-top: 4px solid orange;
+        border-bottom: 4px solid orange;
+
+        .carrousel__img {
+
+            border-radius: 8px;
+
+        }
+
+    }
+}
+.carrousel__x {
+    position: absolute;
+    top : 1rem;
+    left : 1rem;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.carrousel__figure {
+
+    height: 100%;
+    overflow-y: hidden;
+    
+}
+.carrousel__img {
+
+    position : absolute;
+    top : 0;
+    left : 0;
+    object-fit:cover;
+    width : 100%;
+    height : 100%;
+    opacity : 0;
 
 }
 
-.carrousel--ouvrir {
+.carrousel__img {
+    position : absolute;
+    top : 0;
+    left : 0;
+    object-fit:cover;
+    width : 100%;
+    height : 100%;
+    opacity : 0;
+    transition : opacity .5s;
+    border-radius: 30px;
 
+    transition: border-radius 200ms;
+
+}
+.carrousel__img--activer{
+    opacity: 1;
+}
+
+
+.carrousel--activer {
     scale: 1;
+}
+.carrousel__form {
+    position : absolute;
+    bottom: 0;
+    text-align: center;
+    width : 100%;
+}
 
+.carrousel__rad {
+    display : inline-block;
+    margin: 5px;
 }
