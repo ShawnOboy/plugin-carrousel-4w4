@@ -78,6 +78,51 @@
   margin: 5px;
 }
 
+.flch_G {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  top: 0;
+  color: #ff7b00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1000%;
+  user-select: none;
+  cursor: pointer;
+  translate: 1rem;
+  box-shadow: none;
+  transition: color 200ms, translate 200ms, box-shadow 200ms;
+}
+.flch_G:hover {
+  color: #8a4300;
+  translate: 0;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+}
+
+.flch_D {
+  position: absolute;
+  height: 100%;
+  width: auto;
+  top: 0;
+  color: #ff7b00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1000%;
+  user-select: none;
+  cursor: pointer;
+  right: 1rem;
+  translate: -1rem;
+  box-shadow: none;
+  transition: color 200ms, translate 200ms, box-shadow 200ms;
+}
+.flch_D:hover {
+  color: #8a4300;
+  translate: 0;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+}
+
 .carrousel__ouvrir {
   display: none;
 }/*# sourceMappingURL=style.css.map */

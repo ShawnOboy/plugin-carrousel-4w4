@@ -48,7 +48,6 @@
   
   function creation_img_carrousel(elm){
     let img = document.createElement('img')
-    // img.setAttribute('src', elm.getAttribute('src'))
     img.classList.add('carrousel__img')
     img.src = elm.src
     carrousel__figure.appendChild(img)

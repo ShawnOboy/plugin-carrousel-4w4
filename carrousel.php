@@ -33,6 +33,8 @@ function genere_boite()
             <div class="carrousel">
                 <button class="carrousel__x">X</button>
                 <figure class="carrousel__figure"></figure>
+                <div class="flch_G"><</div>
+                <div class="flch_D">></div>
                 <form class="carrousel__form"></form>
             </div>';
 }
