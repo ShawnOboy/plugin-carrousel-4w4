@@ -2,23 +2,11 @@
 <?php
 /**
  * Plugin Name: Carrousel
- * Author: Eddy Martin
- * Author uri: https://github.com/eddytuto
- * Description: Permet d'afficher les images d'une galerie dans une boîte modale naviguable
+ * Author: Shawn Roggero
+ * Author uri: https://github.com/shawnoboy
+ * Description: Une extension qui permet d'afficher les images d'une galerie dans une boîte modale.
+ * Version: 1.0.0
  */
-
- /* style.css  formater et animer le carrousel */
- /* carrousel.js  pour contrôler le carrousel */
- /* boîte modale qui contiendra le carrousel */
-
- /*
- filemtime() // retourne en milliseconde le temps de la dernière sauvegarde
-plugin_dir_path() // retourne le chemin du répertoire du plugin
-__FILE__ // une constante contenant le chemin du fichier en train de s'exécuter
-wp_enqueue_style() // Intègre le link:css dans la page
-wp_enqueue_script() // intègre le script dans la page
-wp_enqueue_scripts // le hook qui permettra d'enfiler le css et le script
-*/
 
 function enfiler_script_css()
 {

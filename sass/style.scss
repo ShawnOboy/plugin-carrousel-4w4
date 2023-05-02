@@ -28,8 +28,8 @@
 }
 .carrousel__x {
     position: absolute;
-    top : 1rem;
-    left : 1rem;
+    top: 1rem;
+    left: 1rem;
     z-index: 3;
     cursor: pointer;
 }
@@ -42,25 +42,27 @@
 }
 .carrousel__img {
 
-    position : absolute;
-    top : 0;
-    left : 0;
-    object-fit:cover;
-    width : 100%;
-    height : 100%;
-    opacity : 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+    width: 100%;
+    height: 100%;
+    opacity: 0;
 
 }
 
 .carrousel__img {
-    position : absolute;
-    top : 0;
-    left : 0;
-    object-fit:cover;
-    width : 100%;
-    height : 100%;
-    opacity : 0;
-    transition : opacity .5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .5s;
     border-radius: 30px;
 
     transition: border-radius 200ms;
@@ -75,13 +77,13 @@
     scale: 1;
 }
 .carrousel__form {
-    position : absolute;
+    position: absolute;
     bottom: 0;
     text-align: center;
-    width : 100%;
+    width: 100%;
 }
 
 .carrousel__rad {
-    display : inline-block;
+    display: inline-block;
     margin: 5px;
 }
