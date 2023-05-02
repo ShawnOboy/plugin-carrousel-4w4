@@ -76,4 +76,8 @@
 .carrousel__rad {
   display: inline-block;
   margin: 5px;
+}
+
+.carrousel__ouvrir {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
