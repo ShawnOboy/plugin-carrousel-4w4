@@ -74,7 +74,6 @@
     position++
     carrousel__form.appendChild(rad)
   }
-
   flechG.addEventListener("mousedown", function() {
     if(index > 0) {
       index--
@@ -96,6 +95,7 @@
     }
     carrousel__figure.children[index].classList.add('carrousel__img--activer')
     ancien_index = index
+    verif_index()
   }
   
   /*
@@ -104,5 +104,23 @@
     carrousel.classList.contain('carrousel--activer')
     mdn classList.contain()
   */
+
+  function verif_index() {
+
+    if(index > 0) {
+      flechG.style.display = "flex";
+    }
+    else {
+      flechG.style.display = "none";
+    }
+
+    if(index < 4) {
+      flechD.style.display = "flex";
+    }
+    else {
+      flechD.style.display = "none";
+    }
+
+  }
   
   })()
