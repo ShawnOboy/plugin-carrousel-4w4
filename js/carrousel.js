@@ -77,15 +77,21 @@
   flechG.addEventListener("mousedown", function() {
     if(index > 0) {
       index--
-      afficher_image(index)
     }
+    else {
+      index = galerie__img.length - 1
+    }
+    afficher_image(index)
   })
 
   flechD.addEventListener("mousedown", function() {
-    if(index < 4) {
+    if(index < galerie__img.length - 1) {
       index++
-      afficher_image(index)
     }
+    else {
+      index = 0;
+    }
+    afficher_image(index)
   })
   
   function afficher_image(index){
@@ -106,21 +112,6 @@
   */
 
   function verif_index() {
-
-    if(index > 0) {
-      flechG.style.display = "flex";
-    }
-    else {
-      flechG.style.display = "none";
-    }
-
-    if(index < 4) {
-      flechD.style.display = "flex";
-    }
-    else {
-      flechD.style.display = "none";
-    }
-
     let btnsRad = document.querySelectorAll(".carrousel__rad")
     for (let i = 0; i < btnsRad.length; i++) {
       if(i == index) {
