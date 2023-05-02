@@ -14,6 +14,8 @@
   let flechG = document.querySelector(".flch_G")
   let flechD = document.querySelector(".flch_D")
 
+  let articles = document.querySelectorAll(".blocflex__article")
+
   /* ------------------------------------------ positionnement de l'image active du carrousel */
   let position = 0 // permet d'indexer les image de la galerie et 
   let index = 0
@@ -28,7 +30,9 @@
   /* ----------------------------------------------------  fermer boîte modale */
   carrousel__x.addEventListener('mousedown', function(){
     carrousel.classList.remove('carrousel--activer')
-  
+    for (const article of articles) {
+      article.style.pointerEvents = "all";
+    }
   })
    
   /** 
@@ -98,8 +102,12 @@
   
     if (ancien_index != -1){
     carrousel__figure.children[ancien_index].classList.remove('carrousel__img--activer')
+
     }
     carrousel__figure.children[index].classList.add('carrousel__img--activer')
+    for (const article of articles) {
+      article.style.pointerEvents = "none";
+    }
     ancien_index = index
     verif_index()
   }

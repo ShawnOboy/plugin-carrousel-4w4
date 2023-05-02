@@ -1,12 +1,12 @@
 .carrousel {
   width: 50%;
-  height: 80%;
+  height: 100%;
   background-color: rgb(60, 140, 150);
   border-top: 4px solid rgb(130, 190, 200);
   border-bottom: 4px solid rgb(30, 100, 110);
   border-radius: 30px;
   position: fixed;
-  top: 2rem;
+  top: 0;
   left: 25%;
   padding: 1rem;
   scale: 0;
@@ -35,6 +35,7 @@
 }
 
 .carrousel__img {
+  cursor: default !important;
   position: absolute;
   top: 0;
   left: 0;
