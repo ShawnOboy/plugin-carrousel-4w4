@@ -9,6 +9,11 @@
   /* -------------------------------------------------------- Variable de la galerie */
   let galerie = document.querySelector(".galerie")
   let galerie__img = galerie.querySelectorAll("img")
+
+  // fleche carrousel
+  let flechG = document.querySelector(".flch_G")
+  let flechD = document.querySelector(".flch_D")
+
   /* ------------------------------------------ positionnement de l'image active du carrousel */
   let position = 0 // permet d'indexer les image de la galerie et 
   let index = 0
@@ -69,6 +74,20 @@
     position++
     carrousel__form.appendChild(rad)
   }
+
+  flechG.addEventListener("mousedown", function() {
+
+    index--
+    afficher_image(index)
+
+  })
+
+  flechD.addEventListener("mousedown", function() {
+
+    index++
+    afficher_image(index)
+
+  })
   
   function afficher_image(index){
   
