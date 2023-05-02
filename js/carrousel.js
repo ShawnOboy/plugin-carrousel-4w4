@@ -9,23 +9,19 @@
   /* -------------------------------------------------------- Variable de la galerie */
   let galerie = document.querySelector(".galerie")
   let galerie__img = galerie.querySelectorAll("img")
-  // console.log("galerie__img: " + galerie__img.length)
-  // console.log(carrousel.tagName)
   /* ------------------------------------------ positionnement de l'image active du carrousel */
   let position = 0 // permet d'indexer les image de la galerie et 
   let index = 0
   let ancien_index = -1
   
   /* ----------------------------------------------------  ouvrir boîte modale */
-  bouton.addEventListener('mousedown', function(){
-    console.log('ouvrir la boîte modale')
-    carrousel.classList.add('carrousel--activer')
-    ajouter_img_dans_carrousel()
+  // bouton.addEventListener('mousedown', function(){
+  //   carrousel.classList.add('carrousel--activer')
+  //   ajouter_img_dans_carrousel()
   
-  })
+  // })
   /* ----------------------------------------------------  fermer boîte modale */
   carrousel__x.addEventListener('mousedown', function(){
-    console.log('fermer la boîte modale')
     carrousel.classList.remove('carrousel--activer')
   
   })
@@ -36,26 +32,25 @@
   */
   // function ajouter_img_dans_carrousel()
   // {
-    for (const elm of galerie__img)
-    {
-      elm.dataset.index = position
-      elm.addEventListener('mousedown', function(evt){
-        index = evt.target.dataset.index
-        afficher_image(index)
-      })
-  
-      creation_img_carrousel(elm)
-      creation_radio_carrousel()
-    }
+  for (const elm of galerie__img)
+  {
+    elm.dataset.index = position
+    elm.addEventListener('mousedown', function(evt){
+      carrousel.classList.add('carrousel--activer')
+      index = evt.target.dataset.index
+      afficher_image(index)
+    })
+
+    creation_img_carrousel(elm)
+    creation_radio_carrousel()
+  }
   // }
   
   function creation_img_carrousel(elm){
-    //console.log(elm.getAttribute('src'))
     let img = document.createElement('img')
     // img.setAttribute('src', elm.getAttribute('src'))
     img.classList.add('carrousel__img')
     img.src = elm.src
-    //console.log (img.getAttribute('src'))
     carrousel__figure.appendChild(img)
   }
   /**
