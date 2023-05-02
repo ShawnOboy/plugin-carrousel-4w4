@@ -76,17 +76,17 @@
   }
 
   flechG.addEventListener("mousedown", function() {
-
-    index--
-    afficher_image(index)
-
+    if(index > 0) {
+      index--
+      afficher_image(index)
+    }
   })
 
   flechD.addEventListener("mousedown", function() {
-
-    index++
-    afficher_image(index)
-
+    if(index < 4) {
+      index++
+      afficher_image(index)
+    }
   })
   
   function afficher_image(index){
