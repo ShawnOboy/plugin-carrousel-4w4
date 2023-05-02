@@ -121,6 +121,13 @@
       flechD.style.display = "none";
     }
 
+    let btnsRad = document.querySelectorAll(".carrousel__rad")
+    for (let i = 0; i < btnsRad.length; i++) {
+      if(i == index) {
+        btnsRad[i].checked = true;
+      }
+    }
+
   }
   
   })()
