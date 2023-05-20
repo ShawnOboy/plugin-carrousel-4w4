@@ -1,13 +1,9 @@
 .carrousel {
-  width: 50%;
-  height: 100%;
   background-color: rgb(60, 140, 150);
   border-top: 4px solid rgb(130, 190, 200);
   border-bottom: 4px solid rgb(30, 100, 110);
   border-radius: 30px;
-  position: fixed;
-  top: 0;
-  left: 25%;
+  position: absolute;
   padding: 1rem;
   scale: 0;
   transition: scale 200ms, border-radius 200ms, border-top 200ms, border-bottom 200ms, scale 200ms;

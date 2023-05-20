@@ -1,151 +1,151 @@
 .carrousel {
-    width: 50%;
-    height: 100%;
-    background-color: rgb(60, 140, 150);
-    border-top: 4px solid rgb(130, 190, 200);
-    border-bottom: 4px solid rgb(30, 100, 110);
-    border-radius: 30px;
-    position: fixed;
-    top: 0;
-    left: 25%;
-    padding: 1rem;
-    scale: 0;
-    transition: scale 200ms, border-radius 200ms, border-top 200ms, border-bottom 200ms, scale 200ms;
+  // width: 50%;
+  // height: 100%;
+  background-color: rgb(60, 140, 150);
+  border-top: 4px solid rgb(130, 190, 200);
+  border-bottom: 4px solid rgb(30, 100, 110);
+  border-radius: 30px;
+  position: absolute;
+  // top: 0;
+  // left: 25%;
+  padding: 1rem;
+  scale: 0;
+  transition: scale 200ms, border-radius 200ms, border-top 200ms, border-bottom 200ms, scale 200ms;
 
-    &:hover {
+  &:hover {
 
-        border-radius: 8px;
-        border-top: 4px solid orange;
-        border-bottom: 4px solid orange;
+      border-radius: 8px;
+      border-top: 4px solid orange;
+      border-bottom: 4px solid orange;
 
-        .carrousel__img {
+      .carrousel__img {
 
-            border-radius: 8px;
+          border-radius: 8px;
 
-        }
+      }
 
-    }
+  }
 }
 .carrousel__x {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    z-index: 3;
-    cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 3;
+  cursor: pointer;
 }
 
 .carrousel__figure {
 
-    height: 100%;
-    overflow-y: hidden;
-    
+  height: 100%;
+  overflow-y: hidden;
+  
 }
 .carrousel__img {
 
-    cursor: default !important;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
+  cursor: default !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 
-    width: 100%;
-    height: 100%;
-    opacity: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
 
 }
 
 .carrousel__img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity .5s;
-    border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity .5s;
+  border-radius: 30px;
 
-    transition: border-radius 200ms;
+  transition: border-radius 200ms;
 
 }
 .carrousel__img--activer{
-    opacity: 1;
+  opacity: 1;
 }
 
 
 .carrousel--activer {
-    scale: 1;
+  scale: 1;
 }
 .carrousel__form {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
 }
 
 .carrousel__rad {
-    display: inline-block;
-    margin: 5px;
+  display: inline-block;
+  margin: 5px;
 }
 
 .flch_G {
 
-    position: absolute;
-    height: 100%;
-    width: auto;
-    top: 0;
-    color: #ff7b00;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1000%;
-    user-select: none;
-    cursor: pointer;
-    translate: 1rem;
-    box-shadow: none;
-    transition: color 200ms, translate 200ms, box-shadow 200ms;
+  position: absolute;
+  height: 100%;
+  width: auto;
+  top: 0;
+  color: #ff7b00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1000%;
+  user-select: none;
+  cursor: pointer;
+  translate: 1rem;
+  box-shadow: none;
+  transition: color 200ms, translate 200ms, box-shadow 200ms;
 
-    &:hover {
+  &:hover {
 
-        color: #8a4300;
-        translate: 0;
-        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+      color: #8a4300;
+      translate: 0;
+      box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
 
-    }
+  }
 
 }
 
 .flch_D {
 
-    position: absolute;
-    height: 100%;
-    width: auto;
-    top: 0;
-    color: #ff7b00;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1000%;
-    user-select: none;
-    cursor: pointer;
-    right: 1rem;
-    translate: -1rem;
-    box-shadow: none;
-    transition: color 200ms, translate 200ms, box-shadow 200ms;
+  position: absolute;
+  height: 100%;
+  width: auto;
+  top: 0;
+  color: #ff7b00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1000%;
+  user-select: none;
+  cursor: pointer;
+  right: 1rem;
+  translate: -1rem;
+  box-shadow: none;
+  transition: color 200ms, translate 200ms, box-shadow 200ms;
 
-    &:hover {
+  &:hover {
 
-        color: #8a4300;
-        translate: 0;
-        box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+      color: #8a4300;
+      translate: 0;
+      box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
 
-    }
+  }
 
 }
 
 .carrousel__ouvrir {
 
-    display: none;
+  display: none;
 
 }
